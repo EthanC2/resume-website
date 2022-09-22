@@ -13,11 +13,36 @@ import { ContactComponent } from './pages/contact/contact.component';
 
 
 const routes: Routes = [
-    { path: '', component: HomeComponent, pathMatch: 'full' },
-    { path: 'about', component: AboutComponent },
-    { path: 'resume', component: ResumeComponent },
-    { path: 'portfolio', component: PortfolioComponent },
-    { path: 'contact', component: ContactComponent },
+  { 
+    path: '', 
+    component: HomeComponent, 
+    pathMatch: 'full',
+    title: "Digital Resume"
+  },
+
+  { 
+    path: 'about', 
+    component: AboutComponent,
+    title: "About Me"
+  },
+
+  { 
+    path: 'resume', 
+    component: ResumeComponent,
+    title: "Resume"
+  },
+
+  { 
+    path: 'portfolio', 
+    component: PortfolioComponent,
+    title: "Portfolio"
+  },
+
+  { 
+    path: 'contact', 
+    component: ContactComponent,
+    title: "Contact"
+  },
 ]
 
 @NgModule({
