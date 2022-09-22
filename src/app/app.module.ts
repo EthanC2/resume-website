@@ -10,6 +10,7 @@ import { AboutComponent } from './pages/about/about.component';
 import { ResumeComponent } from './pages/resume/resume.component';
 import { PortfolioComponent } from './pages/portfolio/portfolio.component';
 import { ContactComponent } from './pages/contact/contact.component';
+import { IconsModule } from './icons/icons.module';
 
 
 const routes: Routes = [
@@ -17,7 +18,7 @@ const routes: Routes = [
     path: '', 
     component: HomeComponent, 
     pathMatch: 'full',
-    title: "Digital Resume"
+    title: "Ethan Cox - Resume"
   },
 
   { 
@@ -58,6 +59,7 @@ const routes: Routes = [
   imports: [
     BrowserModule,
     AppRoutingModule,
+    IconsModule,
     RouterModule.forRoot(routes)
   ],
   exports: [

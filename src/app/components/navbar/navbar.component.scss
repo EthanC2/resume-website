@@ -1,12 +1,44 @@
+@import '../../../styles.scss';
+
 .navlink {
     @apply 
-        py-4 
+        py-3
         text-center 
         border-b-2 
         flex
 }
 
 .navlink a {
+    font-family: $font-sans;
+
     @apply 
         grow
+}
+
+#contact-info #copyright {
+    font-family: $font-sans;
+    
+    @apply
+        text-sm 
+        text-center
+}
+
+#external-links {
+    @apply
+        flex
+        justify-evenly
+        pt-2
+}
+
+#external-links i-tabler {
+    @apply
+        w-9
+        h-auto
+        border-[3px]
+        rounded-full
+        border-black
+}
+
+#external-links i-tabler:hover {
+    fill: #1DA1F2;
 }

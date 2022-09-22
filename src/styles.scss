@@ -3,7 +3,14 @@
 @tailwind components;
 @tailwind utilities;
 
+$font-sans: 'Karla', sans-serif;
+$font-serif: 'Spectral', serif;
+
 html, 
 body {
     height: 100vh;
+}
+
+* {
+    font-family: $font-serif
 }
