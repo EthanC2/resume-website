@@ -1,0 +1,12 @@
+.navlink {
+    @apply 
+        py-4 
+        text-center 
+        border-b-2 
+        flex
+}
+
+.navlink a {
+    @apply 
+        grow
+}
