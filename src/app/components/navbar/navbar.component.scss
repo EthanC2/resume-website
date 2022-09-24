@@ -1,5 +1,9 @@
 @import '../../../styles.scss';
 
+#navlinks {
+    
+}
+
 .navlink {
     @apply 
         py-3
@@ -11,16 +15,15 @@
 .navlink a {
     font-family: $font-sans;
 
+    
     @apply 
-        grow
+        flex-1
 }
 
-#contact-info #copyright {
-    font-family: $font-sans;
-    
+.navlink-active {
     @apply
-        text-sm 
-        text-center
+        border-r-[3px]
+        border-r-cyan-400    
 }
 
 #external-links {
@@ -39,6 +42,10 @@
         border-black
 }
 
-#external-links i-tabler:hover {
-    fill: #1DA1F2;
+#copyright {
+    font-family: $font-sans;
+    
+    @apply
+        text-sm 
+        text-center
 }

@@ -25,8 +25,4 @@ const icons = {
     TablerIconsModule
   ]
 })
-export class IconsModule { }
-
-// NOTES:
-// 1. We add TablerIconsModule to the 'exports', since the <i-tabler> component will be used in templates of parent module
-// 2. Don't forget to pick some icons using TablerIconsModule.pick({ ... })
+export class IconsModule {}

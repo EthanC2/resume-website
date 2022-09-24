@@ -1,59 +1,56 @@
-<div id="lhs-bar">
+<!-- Navigation Bar -->
+<nav id="navbar">
     <!-- Profile Picture -->
     <img id="profile-pic" src="../../assets/images/headshot.png" />
 
-    <!-- Navigation Bar -->
-    <div>
-        <nav id="navbar">
-            <!-- Pages -->
-            <ul id="navlinks">
-                <li class="navlink">
-                    <a routerLink="">Home</a>
-                </li>
+    <!-- Pages -->
+    <ul id="navlinks">
+        <li class="navlink" routerLinkActive="navlink-active" [routerLinkActiveOptions]="{exact:
+            true}">
+            <a routerLink="">Home</a>
+        </li>
 
-                <li class="navlink">
-                    <a routerLink="/about">About</a>
-                </li>
+        <li class="navlink" routerLinkActive="navlink-active">
+            <a routerLink="/about">About</a>
+        </li>
 
-                <li class="navlink">
-                    <a routerLink="/resume">Resume</a>
-                </li>
+        <li class="navlink" routerLinkActive="navlink-active">
+            <a routerLink="/resume">Resume</a>
+        </li>
 
-                <li class="navlink">
-                    <a routerLink="/portfolio">Portfolio</a>
-                </li>
+        <li class="navlink" routerLinkActive="navlink-active">
+            <a routerLink="/portfolio">Portfolio</a>
+        </li>
 
-                <li class="navlink">
-                    <a routerLink="/contact">Contact</a>
-                </li>
-            </ul>
-        </nav>
+        <li class="navlink" routerLinkActive="navlink-active">
+            <a routerLink="/contact">Contact</a>
+        </li>
+    </ul>
 
-        <!-- Contact Info -->
-        <div id="contact-info">
-            <!-- Social Media -->
-            <ul id="external-links">
-                <li>
-                    <a href="https://github.com/EthanC2" target="_blank">
-                        <i-tabler name="brand-github"></i-tabler>
-                    </a>
-                </li>
+    <!-- Contact Info -->
+    <footer id="contact-info">
+        <!-- Social Media -->
+        <ul id="external-links">
+            <li>
+                <a href="https://github.com/EthanC2" target="_blank">
+                    <i-tabler name="brand-github"></i-tabler>
+                </a>
+            </li>
 
-                <li>
-                    <a href="https://www.linkedin.com/in/ethan-r-cox/" target="_blank">
-                        <i-tabler name="brand-linkedin"></i-tabler>
-                    </a>
-                </li>
+            <li>
+                <a href="https://www.linkedin.com/in/ethan-r-cox/" target="_blank">
+                    <i-tabler name="brand-linkedin"></i-tabler>
+                </a>
+            </li>
 
-                <li>
-                    <a href="https://twitter.com/ethanrcox" target="_blank">
-                        <i-tabler name="brand-twitter"></i-tabler>
-                    </a>
-                </li>
-            </ul>
+            <li>
+                <a href="https://twitter.com/ethanrcox" target="_blank">
+                    <i-tabler name="brand-twitter"></i-tabler>
+                </a>
+            </li>
+        </ul>
 
-            <!-- Copyright -->
-            <p id="copyright">&copy; ethancox.dev 2020-2022</p>
-        </div>
-    </div>
-</div>
+        <!-- Copyright -->
+        <p id="copyright">&copy; ethancox.dev 2020-2022</p>
+    </footer>
+</nav>

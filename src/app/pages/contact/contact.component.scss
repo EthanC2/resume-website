@@ -1,0 +1,16 @@
+@import '../../../styles.scss';
+
+#title {
+    font-family: $font-sans;
+
+    @apply
+        text-4xl
+        font-bold
+        mb-10
+}
+
+.lineunder {
+    @apply
+        border-b-4
+        border-blue-500
+}

@@ -1,5 +1,6 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
+import { FormsModule } from '@angular/forms';
 import { RouterModule, Routes } from '@angular/router'
 
 import { AppRoutingModule } from './app-routing.module';
@@ -11,6 +12,7 @@ import { ResumeComponent } from './pages/resume/resume.component';
 import { PortfolioComponent } from './pages/portfolio/portfolio.component';
 import { ContactComponent } from './pages/contact/contact.component';
 import { IconsModule } from './icons/icons.module';
+import { EmailComponent } from './components/email/email.component';
 
 
 const routes: Routes = [
@@ -55,9 +57,11 @@ const routes: Routes = [
     ResumeComponent,
     PortfolioComponent,
     ContactComponent,
+    EmailComponent,
   ],
   imports: [
     BrowserModule,
+    FormsModule,
     AppRoutingModule,
     IconsModule,
     RouterModule.forRoot(routes)
