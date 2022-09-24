@@ -2,8 +2,9 @@ import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { FormsModule } from '@angular/forms';
 import { RouterModule, Routes } from '@angular/router'
-
 import { AppRoutingModule } from './app-routing.module';
+import { SwiperModule } from 'swiper/angular';
+
 import { AppComponent } from './app.component';
 import { NavbarComponent } from './components/navbar/navbar.component';
 import { HomeComponent } from './pages/home/home.component';
@@ -13,6 +14,7 @@ import { PortfolioComponent } from './pages/portfolio/portfolio.component';
 import { ContactComponent } from './pages/contact/contact.component';
 import { IconsModule } from './icons/icons.module';
 import { EmailComponent } from './components/email/email.component';
+import { RepositoryComponent } from './components/repository/repository.component';
 
 
 const routes: Routes = [
@@ -58,12 +60,14 @@ const routes: Routes = [
     PortfolioComponent,
     ContactComponent,
     EmailComponent,
+    RepositoryComponent,
   ],
   imports: [
     BrowserModule,
     FormsModule,
     AppRoutingModule,
     IconsModule,
+    SwiperModule,
     RouterModule.forRoot(routes)
   ],
   exports: [

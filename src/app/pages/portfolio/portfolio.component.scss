@@ -1,0 +1,42 @@
+@import '../../../styles.scss';
+
+#grid {
+    @apply
+    h-full
+    w-full
+    mt-10
+    
+    grid 
+    overflow-hidden 
+    grid-cols-12 
+    grid-rows-2 
+    gap-3
+
+    place-content-center
+}
+
+section {
+    @apply
+    col-start-4 
+    col-span-6
+    mb-6
+    text-center
+}
+
+section h1 {
+    font-family: $font-sans;
+
+    @apply
+        text-4xl
+        mb-6
+}
+
+#project-list {
+
+}
+
+.lineunder {
+    @apply
+        border-b-4
+        border-blue-500
+}
